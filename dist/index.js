@@ -108,7 +108,7 @@
                 appId,
                 privateKey,
               },
-              baseUrl: process.env.GITHUB_API_URL || 'https://api.github.com',
+              baseUrl: 'https://api.github.com',
             });
             const installations = yield appOctokit.apps.listInstallations();
             let installationId = installations.data[0].id;
